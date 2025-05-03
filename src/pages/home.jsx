@@ -70,14 +70,15 @@ const Home = () => {
           <button className="bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition cursor-pointer whitespace-nowrap">
             START TRADING
           </button>
-          <div className="bg-transparent pl-0 absolute m-3 flex flex-col mx-auto">
+          <div className="bg-transparent pl-0 absolute m-10 flex flex-col mx-auto">
             {/* First Row with 5 items */}
             <div className="flex flex-row justify-around gap-6 mb-4">
               <img src={SolanaLogo} alt="Solana Logo" className="h-6 w-auto" />
+              <img src={Logoipsum1} alt="Logoipsum 1" className="h-6 w-auto" />
               <img src={BitcoinLogo} alt="Bitcoin Logo" className="h-6 w-auto" />
               <img src={EthereumLogo} alt="Ethereum Logo" className="h-6 w-auto" />
               <img src={XrpLogo} alt="XRP Logo" className="h-6 w-auto" />
-              <img src={Logoipsum1} alt="Logoipsum 1" className="h-6 w-auto" />
+             
             </div>
             {/* Second Row with 4 items */}
             <div className="flex flex-row justify-around gap-6">
