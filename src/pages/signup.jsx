@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import Logo from "../assets/logo.png"; // Adjust path based on your project structure
+import Logo from "../assets/logo.png";
+import Logo1 from "../assets/logo1.png"; // Adjust path based on your project structure
 
 function SignUp() {
   const [formData, setFormData] = useState({
@@ -46,15 +47,15 @@ function SignUp() {
        
                  <div className="px-4 sm:px-8 py-5">
                     <div>
-                   <img src={Logo} className="h-8" alt="Website Logo" />
+                   <img src={Logo1} className="h-8" alt="Website Logo" />
                    </div>
                  </div>
       </div>
 
       {/* Form Container */}
-      <div className="flex-1 flex items-center justify-center px-4 z-10">
-        <div className="w-full max-w-md bg-[#0A1020]/80 backdrop-blur-sm rounded-lg border border-gray-800 p-8">
-          <div className="text-center mb-6">
+      <div className="flex-1 flex items-center justify-center px-4 z-10 ">
+        <div className="w-full max-w-md bg-[#0A1020]/80 backdrop-blur-sm rounded-lg border  border-gray-800 p-8 ">
+          <div className="text-left mb-6">
             <h1 className="text-white text-2xl font-semibold">Sign up</h1>
             <p className="text-gray-400 text-sm mt-1">Just some details to get you in!</p>
           </div>
