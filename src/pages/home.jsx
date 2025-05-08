@@ -44,7 +44,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-black text-white px-4 sm:px-20 py-4">
+    <div className="bg-gradient-to-r from-gray-900 to-black text-white px-4 sm:px-20 py-4 pb-0">
       {/* Navigation Bar */}
       <nav className="px-4 sm:px-8 py-4">
         <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-between space-y-4 md:space-y-0">
@@ -430,118 +430,120 @@ const Home = () => {
       </div>
       </div>
 
-      <div className="flex justify-center items-center px-4 sm:px-8 py-4  ">
-      <div className="w-full max-w-screen-xl  flex flex-col justify-start items-center rounded-xl ">
+      <footer className="flex justify-center items-center px-4 sm:px-8 py-4 pb-0">
+      <div className="w-full max-w-screen-xl flex flex-col justify-start items-center rounded-xl">
+        <div className="w-full bg-gradient-to-br from-[#0a1a2f] to-[#101c2f] text-[#b6c2d6] p-8 rounded-xl m-4 border border-[#1e2a3a]">
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
+            {/* Logo සහ Description */}
+            <div className="flex-1 min-w-[220px]">
+              <div className="flex items-center gap-2 mb-4">
+                <span className="text-3xl font-bold text-cyan-400">X</span>
+                <span className="text-xl font-semibold text-white">CriptyFX</span>
+              </div>
+              <p className="text-sm mb-4">
+                Lorem ipsum dolor sit amet, congue egestas nisl condimentum adipiscing elit. 
+                Nibh antean aliquet amet, neque ut maecenas. Lorem sed egestas nisl condimentum.
+              </p>
+              <div className="flex gap-4 text-xl">
+                <a href="#">cc</a>
+                <a href="#">cc</a>
+                <a href="#">cc</a>
+              </div>
+            </div>
 
-      <footer className=" w-full bg-gradient-to-br full-w-screen-xl from-[#0a1a2f] to-[#101c2f] text-[#b6c2d6] p-8 rounded-xl m-4 border border-[#1e2a3a]">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
-        {/* Logo සහ Description */}
-        <div className="flex-1 min-w-[220px]">
-          <div className="flex items-center gap-2 mb-4">
-            <span className="text-3xl font-bold text-cyan-400">X</span>
-            <span className="text-xl font-semibold text-white">CriptyFX</span>
+            {/* Footer Links */}
+            <div className="flex flex-1 justify-between flex-wrap gap-8">
+              <div>
+                <h4 className="text-white font-semibold mb-2">Exchange</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="#">Exchange Home</a></li>
+                  <li><a href="#">Margin Trading</a></li>
+                  <li><a href="#">Derivatives Trading</a></li>
+                  <li><a href="#">Supercharger</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-2">Support</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="#">Request form</a></li>
+                  <li><a href="#">Contact Support</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href="#">Security</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-2">Resources</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="#">Downloads</a></li>
+                  <li><a href="#">Desktop Application</a></li>
+                  <li><a href="#">Buy Crypto</a></li>
+                  <li><a href="#">Referral</a></li>
+                  <li><a href="#">Listing Trading</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-2">Learn</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="#">What's Trending</a></li>
+                  <li><a href="#">Product News</a></li>
+                  <li><a href="#">Events</a></li>
+                  <li><a href="#">University</a></li>
+                  <li><a href="#">Research</a></li>
+                  <li><a href="#">Market Update</a></li>
+                </ul>
+              </div>
+              <div>
+                <h4 className="text-white font-semibold mb-2">Company</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Security</a></li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Announcements</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
-          <p className="text-sm mb-4">
-            Lorem ipsum dolor sit amet, congue egestas nisl condimentum adipiscing elit. 
-            Nibh antean aliquet amet, neque ut maecenas. Lorem sed egestas nisl condimentum.
-          </p>
-          <div className="flex gap-4 text-xl">
-            <a href="#">cc</a>
-            <a href="#">cc</a>
-            <a href="#">cc</a>
-          </div>
-        </div>
 
-        {/* Footer Links */}
-        <div className="flex flex-1 justify-between flex-wrap gap-8">
-          <div>
-            <h4 className="text-white font-semibold mb-2">Exchange</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#">Exchange Home</a></li>
-              <li><a href="#">Margin Trading</a></li>
-              <li><a href="#">Derivatives Trading</a></li>
-              <li><a href="#">Supercharger</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Support</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#">Request form</a></li>
-              <li><a href="#">Contact Support</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Security</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Resources</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#">Downloads</a></li>
-              <li><a href="#">Desktop Application</a></li>
-              <li><a href="#">Buy Crypto</a></li>
-              <li><a href="#">Referral</a></li>
-              <li><a href="#">Listing Trading</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Learn</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#">What's Trending</a></li>
-              <li><a href="#">Product News</a></li>
-              <li><a href="#">Events</a></li>
-              <li><a href="#">University</a></li>
-              <li><a href="#">Research</a></li>
-              <li><a href="#">Market Update</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="text-white font-semibold mb-2">Company</h4>
-            <ul className="space-y-1 text-sm">
-              <li><a href="#">About us</a></li>
-              <li><a href="#">Careers</a></li>
-              <li><a href="#">News</a></li>
-              <li><a href="#">Security</a></li>
-              <li><a href="#">Community</a></li>
-              <li><a href="#">Announcements</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+          {/* Divider */}
+          <div className="border-t border-[#22304a] my-6"></div>
 
-      {/* Divider */}
-      <div className="border-t border-[#22304a] my-6"></div>
-
-      {/* Bottom Row */}
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
-        <div className="flex-1 flex flex-wrap gap-4">
-          <span>© 2022 dynamic. All rights reserved</span>
-          <a href="#" className="hover:underline">Privacy</a>
-          <a href="#" className="hover:underline">Terms</a>
-          <a href="#" className="hover:underline">Sitemap</a>
-        </div>
-        <div className="flex gap-2">
-          <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
-            <span>Windows</span>
-          </button>
-          <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
-            <span>Windows</span>
-          </button>
-          <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
-            <span>Windows</span>
-          </button>
-          <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
-            <span>Apple</span>
-          </button>
-          <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
-            <span>Windows</span>
-          </button>
+          {/* Bottom Row */}
+          <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-xs">
+            <div className="flex-1 flex flex-wrap gap-4">
+              <span>© 2022 dynamic. All rights reserved</span>
+              <a href="#" className="hover:underline">Privacy</a>
+              <a href="#" className="hover:underline">Terms</a>
+              <a href="#" className="hover:underline">Sitemap</a>
+            </div>
+            <div className="flex gap-2">
+              <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
+                <span>Windows</span>
+              </button>
+              <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
+                <span>Windows</span>
+              </button>
+              <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
+                <span>Windows</span>
+              </button>
+              <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
+                <span>Apple</span>
+              </button>
+              <button className="bg-[#22304a] px-3 py-1 rounded text-white flex items-center gap-1">
+                <span>Windows</span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </footer>
 
-        </div>
-        </div>
+      
 
     </div>
+
+    
   );
 };
 
