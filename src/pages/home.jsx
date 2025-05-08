@@ -21,6 +21,8 @@ import Windows from "../assets/windows.png";
 import GooglePlay from "../assets/playstory.png";
 import Apple from "../assets/apple.png";
 import Admin from "../assets/admin.png";
+import Vector from "../assets/vector.png";
+import Exclude from "../assets/exclude.png";
 
 
 const Home = () => {
@@ -44,7 +46,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-gray-900 to-black text-white px-4 sm:px-20 py-4 pb-0">
+    <div className="bg-gradient-to-r from-gray-900 to-black text-white px-4 sm:px-20  ">
       {/* Navigation Bar */}
       <nav className="px-4 sm:px-8 py-4">
         <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-between space-y-4 md:space-y-0">
@@ -373,28 +375,68 @@ const Home = () => {
 
       {/* Backed by Investors Section */}
       <div className="flex justify-center items-center px-4 sm:px-8 py-4  ">
-      <div className="w-full max-w-screen-xl  bg-red-600 flex flex-col justify-start items-center rounded-xl ">
+      <div className="w-full max-w-screen-xl  bg-blue-600 flex flex-col justify-start items-center rounded-xl ">
         {/* h1 එක එකතු කර මැදට ගැනීම */}
         <h1 className="text-3xl font-bold text-white mt-5 mb-4 text-center ">Backed by Investors</h1>
         
         {/* රූප 7 එක පේළියක තැබීමට div එක */}
         <div className="flex flex-row justify-between w-full gap-8 ">
-          <img src={SolanaLogo} alt="Solana Logo" className="h-6" />
-          <img src={BitcoinLogo} alt="Bitcoin Logo" className="h-6" />
-          <img src={EthereumLogo} alt="Ethereum Logo" className="h-6" />
-          <img src={XrpLogo} alt="XRP Logo" className="h-6" />
-          <img src={Logoipsum1} alt="Logoipsum 1" className="h-6" />
-          <img src={Logoipsum2} alt="Logoipsum 2" className="h-6" />
-          <img src={Logoipsum3} alt="Logoipsum 3" className="h-6" />
+          <img src={Vector} alt="Vector" className="h-6" />
+          <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+
+          <div className="flex items-center gap-0">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+         
+          
         </div>
         <div className="flex flex-row justify-between w-full gap-8 mt-4 ">
-          <img src={SolanaLogo} alt="Solana Logo" className="h-6" />
-          <img src={BitcoinLogo} alt="Bitcoin Logo" className="h-6" />
-          <img src={EthereumLogo} alt="Ethereum Logo" className="h-6" />
-          <img src={XrpLogo} alt="XRP Logo" className="h-6" />
-          <img src={Logoipsum1} alt="Logoipsum 1" className="h-6" />
-          <img src={Logoipsum2} alt="Logoipsum 2" className="h-6" />
-          <img src={Logoipsum3} alt="Logoipsum 3" className="h-6" />
+        <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+           <div className="flex items-center gap-1">
+               <img src={Exclude} alt="Logoipsum 1" className="h-6" />
+               <span className="text-lg font-medium text-sky-400">Logoipsum</span>
+           </div>
+         
+           <img src={Vector} alt="Vector" className="h-6" />
         </div>
       </div>
     </div>
@@ -431,8 +473,8 @@ const Home = () => {
       </div>
 
       <footer className="flex justify-center items-center px-4 sm:px-8 py-4 pb-0">
-      <div className="w-full max-w-screen-xl flex flex-col justify-start items-center rounded-xl">
-        <div className="w-full bg-gradient-to-br from-[#0a1a2f] to-[#101c2f] text-[#b6c2d6] p-8 rounded-xl m-4 border border-[#1e2a3a]">
+      <div className="w-full max-w-screen-xl flex flex-col justify-start items-center rounded-xl pb-0">
+        <div className="w-full p-8 rounded-xl m-4 border-t border-l border-r border-[#1e2a3a] border-b-0 ">
           <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:justify-between gap-8">
             {/* Logo සහ Description */}
             <div className="flex-1 min-w-[220px]">
