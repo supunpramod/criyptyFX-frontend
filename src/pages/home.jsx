@@ -23,6 +23,11 @@ import Apple from "../assets/apple.png";
 import Admin from "../assets/admin.png";
 import Vector from "../assets/vector.png";
 import Exclude from "../assets/exclude.png";
+import { IoIosArrowForward } from "react-icons/io";
+import { IoQrCode } from "react-icons/io5";
+import './styles.css';
+
+
 
 
 const Home = () => {
@@ -48,64 +53,51 @@ const Home = () => {
   return (
     <div className="bg-gradient-to-r from-gray-900 to-black text-white px-4 sm:px-20  ">
       {/* Navigation Bar */}
-      <nav className="px-4 sm:px-8 py-4">
-        <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-between space-y-4 md:space-y-0">
-          <div className="w-full flex flex-wrap md:flex-nowrap items-center justify-between">
-            {/* Logo */}
-            <div className="flex-shrink-0">
-              <img src={Logo1} className="h-8" alt="Website Logo" />
-            </div>
-            {/* Navigation Links */}
-            <div className="hidden md:flex space-x-8">
-              <button className="text-white hover:text-yellow-400" aria-label="Buy Crypto">
-                Buy Crypto
-              </button>
-              <button className="text-white hover:text-yellow-400" aria-label="Trade">
-                Trade
-              </button>
-              <button className="text-white hover:text-yellow-400" aria-label="NFT">
-                NFT
-              </button>
-              <button className="text-white hover:text-yellow-400" aria-label="More">
-                More
-              </button>
-            </div>
-            {/* Actions */}
-            <div className="flex items-center space-x-4 flex-wrap justify-end">
-              <button
-                className="border border-cyan-500 text-cyan-500 px-4 py-1.5 rounded-full hover:bg-cyan-500/10"
-                aria-label="Select Language"
-              >
-                Select Language
-              </button>
-              <button
-                className="border border-cyan-500 text-cyan-500 px-4 py-1.5 rounded-full hover:bg-cyan-500/10"
-                aria-label="Sign In"
-              >
-                Sign In
-              </button>
-              <div className="bg-cyan-500/20 rounded-full p-0.5 flex">
-                <button className="bg-cyan-500 text-white px-6 py-1.5 rounded-full" aria-label="Real Account">
-                  Real
-                </button>
-                <button
-                  className="text-white px-6 py-1.5 hover:text-cyan-400"
-                  aria-label="Demo Account"
-                >
-                  Demo
-                </button>
-              </div>
-              <button
-                className="bg-cyan-500 text-white px-6 py-1.5 rounded-full hover:bg-cyan-600 flex items-center space-x-2"
-                aria-label="Download App"
-              >
-                <i className="fas fa-download"></i>
-                <span>Download App</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <nav className="w-full  text-white px-4 sm:px-8 py-4 ">
+  <div className="max-w-7xl mx-auto flex items-center justify-between h-16">
+    {/* Logo */}
+    <div className="flex-shrink-0 flex items-center">
+      <img src={Logo1} className="h-8 w-auto" alt="Website Logo" />
+    </div>
+    {/* Navigation Links */}
+    <div className="hidden md:flex space-x-8">
+      <button className="text-white hover:text-yellow-400 text-base font-medium" aria-label="Buy Crypto">
+        Buy Crypto
+      </button>
+      <button className="text-white hover:text-yellow-400 text-base font-medium" aria-label="Trade">
+        Trade
+      </button>
+      <button className="text-white hover:text-yellow-400 text-base font-medium" aria-label="NFT">
+        NFT
+      </button>
+      <button className="text-white hover:text-yellow-400 text-base font-medium" aria-label="More">
+        More
+      </button>
+    </div>
+    {/* Actions */}
+    <div className="flex items-center space-x-4">
+      <button className="flex items-center border border-cyan-400 text-cyan-400 rounded-full px-5 py-2  gap-2 text-sm font-medium">
+        <span>Select Language</span>
+        <span className="ml-1 text-xl"><IoIosArrowForward /></span>
+      </button>
+      <button className="border border-cyan-500 text-cyan-500 px-4 py-2 rounded-full hover:bg-cyan-500/10 text-sm font-medium" aria-label="Sign In">
+        Sign In
+      </button>
+      <div className="bg-cyan-500/20 rounded-full p-0.5 flex">
+        <button className="bg-cyan-500 text-white px-6 py-2 rounded-full text-sm font-medium" aria-label="Real Account">
+          Real
+        </button>
+        <button className="text-white px-6 py-2 hover:text-cyan-400 text-sm font-medium" aria-label="Demo Account">
+          Demo
+        </button>
+      </div>
+      <button className="flex items-center border border-cyan-400 text-cyan-400 rounded-full px-5 py-2 bg-[#0AC5FB] gap-2 text-sm font-medium">
+        <span className="ml-1 text-xl text-white"><IoQrCode /></span>
+        <span className="text-white">Download App</span>
+      </button>
+    </div>
+  </div>
+</nav>
 
       {/* Hero Section */}
       <div className="relative flex flex-col md:flex-row items-center px-4 sm:px-8 py-16 md:py-12">
@@ -157,7 +149,7 @@ const Home = () => {
       </div>
 
       {/* Category Buttons Section */}
-      <div className="text-white pb-10 flex flex-col items-center px-4 sm:px-8 py-4 mt-1">
+      <div className="text-white pb-10 flex flex-col items-center px-4 sm:px-8 py-4 mt-1 h-[750px]">
         <div className="mb-2">
           <img src={Iconx} className="h-8" alt="Icon" />
         </div>
@@ -182,11 +174,7 @@ const Home = () => {
       </div>
 
       {/* Final Red Section */}
-      <div className="flex justify-center items-center px-4 sm:px-8 py-4">
-        <div className="w-full max-w-screen-xl h-[550px] bg-red-600 flex justify-center items-center rounded-xl">
-          <p className="text-white text-xl font-bold text-center">Centered Content</p>
-        </div>
-      </div>
+      
 
       {/* Get Started Section */}
       <div className="bg-slate-900 text-white px-4 sm:px-8 py-4">
@@ -337,7 +325,7 @@ const Home = () => {
       </div>
 
       {/* Benefits Section */}
-      <div className="flex justify-center items-center px-4 sm:px-8 py-4 bg-yellow-300">
+      <div className="flex justify-center items-center px-4 sm:px-8 py-4 ">
         <div className="min-h-screen bg-gradient-to-r from-gray-900 to-black text-white">
           
             <div className="text-center mb-12">
@@ -373,13 +361,13 @@ const Home = () => {
         </div>
       </div>
 
-      {/* Backed by Investors Section */}
+      
       <div className="flex justify-center items-center px-4 sm:px-8 py-4  ">
-      <div className="w-full max-w-screen-xl  bg-blue-600 flex flex-col justify-start items-center rounded-xl ">
-        {/* h1 එක එකතු කර මැදට ගැනීම */}
+      <div className="w-full max-w-screen-xl  bg-transparent flex flex-col justify-start items-center rounded-xl ">
+    
         <h1 className="text-3xl font-bold text-white mt-5 mb-4 text-center ">Backed by Investors</h1>
         
-        {/* රූප 7 එක පේළියක තැබීමට div එක */}
+        
         <div className="flex flex-row justify-between w-full gap-8 ">
           <img src={Vector} alt="Vector" className="h-6" />
           <div className="flex items-center gap-1">
@@ -441,36 +429,49 @@ const Home = () => {
       </div>
     </div>
 
-    <div className="flex justify-center items-center px-4 sm:px-8 py-4  ">
-    <div className="w-full max-w-screen-xl  bg-red-600 flex flex-col justify-start items-center rounded-xl ">
-    
-      <div className="w-full max-w-screen bg-gradient-to-b from-[#1a2236] to-[#181c2a] rounded-xl shadow-lg border border-[#2c374f] p-8 flex flex-col md:flex-row md:items-center justify-between gap-8">
-        {/* Left Side */}
-        <div className="flex-1">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">Start mining now</h2>
-          <p className="text-gray-300 text-sm">
-            Join now with DYNAMIC to get the latest news and start mining now
-          </p>
-        </div>
-        {/* Right Side */}
-        <form className="flex flex-col md:flex-row items-center gap-4 flex-1 justify-end w-full md:w-auto">
-          <input
-            type="email"
-            placeholder="Enter your email"
-            className="bg-transparent border-b border-gray-500 outline-none px-2 py-2 text-white placeholder-gray-400 w-full md:w-64"
-          />
-          <button
-            type="submit"
-            className="bg-[#232b3e] border border-gray-400 rounded-full px-6 py-2 text-white font-semibold hover:bg-[#2c374f] transition"
-          >
-            Subscribe
-          </button>
-        </form>
+          
+    <div className="flex justify-center items-center px-4 sm:px-8 py-4">
+  <div className="w-full h-64 relative bg-gray-950/10 rounded-2xl backdrop-blur-md overflow-hidden border border-white/20 custom-shadow">
+    {/* Title */}
+    <div className="absolute left-4 sm:left-11 top-16 sm:top-20 text-center text-white/80 text-2xl sm:text-4xl font-bold ">
+      Start mining now
+    </div>
+    {/* Description */}
+    <div className="absolute left-4 sm:left-11 top-28 sm:top-36 text-white/80 text-sm sm:text-base font-normal ">
+      Join now with DYNAMIC to get the latest <br /> news and start mining now
+    </div>
+    {/* Subscribe Button */}
+    <div
+      data-property-1="Default"
+      className="absolute right-4 sm:right-8 top-24 sm:top-28 w-32 sm:w-40 px-6 sm:px-9 py-2.5 bg-white/20 rounded-[20px] border border-white inline-flex justify-center items-center gap-2.5 cursor-pointer"
+    >
+      <div className="text-white text-sm sm:text-base font-bold ">
+        Subscribe
       </div>
-    
+    </div>
+    {/* Email Input Field */}
+    <div
+      data-property-1="Default"
+      className="absolute left-4 sm:left-1/2 top-24 sm:top-28 w-80 sm:w-96 h-7 transform sm:-translate-x-1/2"
+    >
+      <div className="w-full h-0 absolute top-[30px] border-b border-white/50 ml-20" />
+      <input
+        type="email"
+        placeholder="Enter your email"
+        className="absolute top-0 w-full opacity-90 text-white text-sm sm:text-base font-normal bg-transparent border-none focus:outline-none ml-20"
+      />
+    </div>
+  </div>
+</div>
 
-      </div>
-      </div>
+
+
+
+
+
+
+
+
 
       <footer className="flex justify-center items-center px-4 sm:px-8 py-4 pb-0">
       <div className="w-full max-w-screen-xl flex flex-col justify-start items-center rounded-xl pb-0">
@@ -580,6 +581,15 @@ const Home = () => {
         </div>
       </div>
     </footer>
+    <div>
+      
+    
+    </div>
+
+  
+
+
+
 
       
 
