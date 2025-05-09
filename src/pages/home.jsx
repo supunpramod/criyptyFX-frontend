@@ -178,7 +178,7 @@ const Home = () => {
 
       {/* Get Started Section */}
       <div className="bg-slate-900 text-white px-4 sm:px-8 py-4">
-        <div className="container bg-black mx-auto px-4 py-12 max-w-[1440px] rounded-xl border-2 border-green-500">
+        <div className="container bg-black mx-auto px-4 py-12 max-w-[1440px] rounded-xl border-2 border-green-500 border-white/20">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Section */}
             <div className="space-y-6">
@@ -188,8 +188,8 @@ const Home = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum lectus, congue turpis a, bibendum finibus ligula. Nam arcu nunc, dapibus in condimentum non, interdum efferitur justo.
               </p>
               <button
-                className="bg-cyan-500 text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition"
-                aria-label="Start Trading"
+                className="bg-cyan-500 text-white px-8 py-2 rounded-full font-semibold shadow-lg hover:bg-yellow-500 transition"
+                aria-label="Start Trading" 
               >
                 Start trading
               </button>
@@ -198,7 +198,7 @@ const Home = () => {
             {/* Right Section - Feature Cards */}
             <div className="grid grid-cols-2 gap-4">
               {/* Card 1 */}
-              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer">
+              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer custom-shadow">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="w-12 h-12 flex items-center justify-center pt-6">
                     <img src={Createaccount} alt="Create Account" className="w-8 h-8" />
@@ -210,7 +210,7 @@ const Home = () => {
                 </div>
               </div>
               {/* Card 2 */}
-              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer">
+              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer custom-shadow">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center pt-6">
                     <img src={Verifybank} alt="Verify Bank" className="w-8 h-8" />
@@ -220,7 +220,7 @@ const Home = () => {
                 </div>
               </div>
               {/* Card 3 */}
-              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer">
+              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer custom-shadow">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center pt-6">
                     <img src={Addfound} alt="Add Funds" className="w-8 h-8" />
@@ -232,7 +232,7 @@ const Home = () => {
                 </div>
               </div>
               {/* Card 4 */}
-              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer">
+              <div className="bg-slate-800/60 p-6 rounded-xl backdrop-blur-sm border border-slate-700/50 hover:bg-slate-800/80 transition-all cursor-pointer custom-shadow">
                 <div className="flex flex-col items-center text-center space-y-4">
                   <div className="w-12 h-12 rounded-full flex items-center justify-center pt-6">
                     <img src={Starttrending} alt="Start Trading" className="w-8 h-8" />
@@ -249,16 +249,86 @@ const Home = () => {
       </div>
 
       {/* Download Section */}
-      <div className="bg-slate-900 text-white px-4 sm:px-8 py-4">
-        <div className="container bg-black mx-auto px-4 py-12 max-w-[1440px] rounded-xl border-2 border-green-500">
+      <div className=" text-white px-4 sm:px-8 py-4">
+        <div className="container bg-black mx-auto px-4 py-5 pt-0 max-w-[1440px] rounded-xl border-2 border-green-500 ">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Left Section */}
-            <div className="space-y-6">
-              <p className="text-blue-400 text-sm">Create Profile</p>
-              <h1 className="text-3xl md:text-3xl font-bold">Easy Way to Get Started</h1>
-              <p className="text-gray-400">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum lectus, congue turpis a, bibendum finibus ligula. Nam arcu nunc, dapibus in condimentum non, interdum efferitur justo.
-              </p>
+            <div className="space-y-12">
+
+
+
+
+
+            <div className="relative flex justify-center items-center h-[400px]  ">
+  {/* Left Card */}
+  <div className="absolute left-1/2 -translate-x-[120%] top-8 z-10 rounded-t-[2.5rem] shadow-2xl border border-white/20 w-[220px] h-[390px] bg-[#181828] overflow-hidden">
+    <img src="/img1.jpg" alt="Preview 1" className="w-full h-full object-cover" />
+  </div>
+  {/* Center Card */}
+  <div className="z-20 rounded-t-[2.5rem] shadow-2xl border-2 border-cyan-400 w-[240px] h-[442px] bg-[#181828] overflow-hidden">
+    <img src="/img2.jpg" alt="Preview 2" className="w-full h-full object-cover" />
+  </div>
+  {/* Right Card */}
+  <div className="absolute left-1/2 translate-x-[20%] top-8 z-10 rounded-t-[2.5rem] shadow-2xl border border-white/20 w-[220px] h-[390px] bg-[#181828] overflow-hidden">
+    <img src="/img3.jpg" alt="Preview 3" className="w-full h-full object-cover" />
+  </div>
+</div>
+
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+              
+
+
+
+
+
+
+
+
+
+
+
+
+              
+             
             </div>
             {/* Right Section */}
             <div>
@@ -328,18 +398,18 @@ const Home = () => {
       <div className="flex justify-center items-center px-4 sm:px-8 py-4 ">
         <div className="min-h-screen bg-gradient-to-r from-gray-900 to-black text-white">
           
-            <div className="text-center mb-12">
+            <div className="text-center mb-12 ">
               <span className="text-green-400">Benefits</span>
               <h2 className="text-4xl font-bold mb-4">Our Best Service</h2>
               <p className="text-gray-400 max-w-2xl mx-auto">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ipsum lacus, congue a turpis a, bibendum finibus lacus. Nam arcu nunc, dapibus in condimentum non, interdum eleifend justo.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 ">
               {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
                 <div
                   key={item}
-                  className="bg-gradient-to-b from-blue-900/30 to-blue-900/10 rounded-2xl p-3 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/30 transition-all cursor-pointer group"
+                  className="bg-gradient-to-b from-blue-900/30 to-blue-900/10 rounded-2xl p-3 backdrop-blur-sm border border-blue-500/20 hover:border-blue-400/30 transition-all cursor-pointer group custom-shadow"
                 >
                   <div className="flex flex-col items-center text-center">
                     <div className="w-15 h-15 rounded-full flex items-center justify-center mb-4 group-hover: transition-all">
